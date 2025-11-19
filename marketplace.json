@@ -1,0 +1,13 @@
+{
+  "name": "pointbreak-plugin",
+  "description": "Official Pointbreak debugging plugin for Claude Code",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "pointbreak",
+      "version": "1.0.0",
+      "description": "Debug programs with IDE debuggers via MCP. Adds the Pointbreak skill and debugging commands for AI-assisted debugging.",
+      "source": "."
+    }
+  ]
+}

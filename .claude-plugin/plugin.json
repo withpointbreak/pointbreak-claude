@@ -1,0 +1,26 @@
+{
+  "name": "pointbreak",
+  "description": "Debug programs with IDE debuggers via MCP. Adds the Pointbreak skill for AI-assisted debugging with breakpoints, variable inspection, and step-through execution.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Pointbreak",
+    "email": "hello@withpointbreak.com",
+    "url": "https://withpointbreak.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withpointbreak/pointbreak-plugin"
+  },
+  "keywords": [
+    "debugging",
+    "debugger",
+    "mcp",
+    "breakpoints",
+    "inspection",
+    "python",
+    "javascript",
+    "rust",
+    "go"
+  ],
+  "license": "MIT"
+}
