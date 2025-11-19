@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pointbreak": {
+      "command": "pointbreak",
+      "args": ["mcp", "serve"]
+    }
+  }
+}
