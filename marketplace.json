@@ -1,5 +1,5 @@
 {
-  "name": "pointbreak-plugin",
+  "name": "pointbreak-claude",
   "description": "Official Pointbreak debugging plugin for Claude Code",
   "version": "1.0.0",
   "plugins": [

@@ -7,6 +7,7 @@ Debug programs with real debuggers through Claude Code. This plugin adds the Poi
 ## 🎯 What This Plugin Does
 
 Instead of adding print statements or guessing what's wrong, Claude can now:
+
 - **Set breakpoints** - "Break when x > 100"
 - **Inspect variables** - "Show me the value of user_input"
 - **Step through code** - "Step into this function"
@@ -17,6 +18,7 @@ Instead of adding print statements or guessing what's wrong, Claude can now:
 ### Prerequisites
 
 1. **Pointbreak must be installed** ([Installation Guide](https://docs.withpointbreak.com/installation))
+
    - IDE extension installed (VS Code, Cursor, or compatible)
    - MCP server configured
 
@@ -26,22 +28,23 @@ Instead of adding print statements or guessing what's wrong, Claude can now:
 
 ```bash
 # Add this repository as a marketplace
-/plugin marketplace add https://github.com/withpointbreak/pointbreak-plugin
+/plugin marketplace add withpointbreak/pointbreak-claude
 
 # Install the plugin
-/plugin install pointbreak@pointbreak-plugin
+/plugin install pointbreak@pointbreak-claude
 ```
 
 Or for local development:
+
 ```bash
 # Clone the repository
-git clone https://github.com/withpointbreak/pointbreak-plugin.git
+git clone https://github.com/withpointbreak/pointbreak-claude.git
 
 # Add as local marketplace
-/plugin marketplace add /path/to/pointbreak-plugin
+/plugin marketplace add /path/to/pointbreak-claude
 
 # Install
-/plugin install pointbreak@pointbreak-plugin
+/plugin install pointbreak@pointbreak-claude
 ```
 
 ## 🚀 Quick Start
@@ -53,6 +56,7 @@ Debug this Python script - it's not returning the right results
 ```
 
 Claude will:
+
 1. Analyze the code
 2. Set strategic breakpoints
 3. Run the debugger
@@ -64,6 +68,7 @@ Claude will:
 ### Agent Skill
 
 **`skills/pointbreak/`** - Comprehensive debugging skill that teaches Claude:
+
 - How to use all Pointbreak MCP tools effectively
 - Common debugging patterns (loops, exceptions, state tracking)
 - Language-specific debugging configurations
@@ -74,6 +79,7 @@ The skill triggers automatically when Claude detects debugging needs.
 ### Slash Commands
 
 #### `/debug [file-path]`
+
 Start debugging with intelligent breakpoint placement.
 
 ```bash
@@ -82,6 +88,7 @@ Start debugging with intelligent breakpoint placement.
 ```
 
 Claude analyzes your code and sets breakpoints at:
+
 - Function entry points
 - Error handling blocks
 - Return statements
@@ -89,6 +96,7 @@ Claude analyzes your code and sets breakpoints at:
 - Conditional branches
 
 #### `/step [over|into|out]`
+
 Step through code execution.
 
 ```bash
@@ -98,6 +106,7 @@ Step through code execution.
 ```
 
 #### `/inspect [variables...]`
+
 Inspect variable values at current breakpoint.
 
 ```bash
@@ -113,6 +122,7 @@ Inspect variable values at current breakpoint.
 **You:** "The calculate_average function returns wrong results"
 
 **Claude will:**
+
 1. Set breakpoint in calculate_average
 2. Run to breakpoint
 3. Inspect variables (numbers, total, count)
@@ -124,6 +134,7 @@ Inspect variable values at current breakpoint.
 **You:** "Step through the authentication process"
 
 **Claude will:**
+
 1. Set breakpoint at auth function entry
 2. Step into each function call
 3. Show variable values at each step
@@ -134,6 +145,7 @@ Inspect variable values at current breakpoint.
 **You:** "Program crashes with IndexError on line 42"
 
 **Claude will:**
+
 1. Set breakpoint before line 42
 2. Inspect array/list and index variables
 3. Identify why index is out of bounds
@@ -144,6 +156,7 @@ Inspect variable values at current breakpoint.
 ### Debug Configurations
 
 The skill includes pre-configured debug setups for:
+
 - Python (basic, Django, Flask, FastAPI, pytest)
 - JavaScript/Node.js (Express, TypeScript, Jest, Next.js)
 - Rust (cargo build, cargo test)
@@ -156,6 +169,7 @@ The skill includes pre-configured debug setups for:
 **You:** "Why is this function so slow?"
 
 **Claude can:**
+
 - Set breakpoints at function boundaries
 - Time execution between points
 - Identify slow code sections
@@ -166,6 +180,7 @@ The skill includes pre-configured debug setups for:
 **You:** "Debug this race condition"
 
 **Claude can:**
+
 - List all threads
 - Pause all threads simultaneously
 - Inspect shared state across threads
@@ -209,18 +224,18 @@ Contributions are welcome! To contribute:
 
 ```bash
 # Clone the repo
-git clone https://github.com/withpointbreak/pointbreak-plugin.git
-cd pointbreak-plugin
+git clone https://github.com/withpointbreak/pointbreak-claude.git
+cd pointbreak-claude
 
 # Add as local marketplace for testing
 /plugin marketplace add $(pwd)
 
 # Install locally
-/plugin install pointbreak@pointbreak-plugin
+/plugin install pointbreak@pointbreak-claude
 
 # Make changes and reinstall
-/plugin uninstall pointbreak@pointbreak-plugin
-/plugin install pointbreak@pointbreak-plugin
+/plugin uninstall pointbreak@pointbreak-claude
+/plugin install pointbreak@pointbreak-claude
 ```
 
 ## 📝 License
@@ -231,13 +246,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Pointbreak Website**: https://withpointbreak.com
 - **Pointbreak Docs**: https://docs.withpointbreak.com
-- **GitHub**: https://github.com/withpointbreak/pointbreak-plugin
-- **Issues**: https://github.com/withpointbreak/pointbreak-plugin/issues
+- **GitHub**: https://github.com/withpointbreak/pointbreak-claude
+- **Issues**: https://github.com/withpointbreak/pointbreak-claude/issues
 
 ## ❓ Support
 
 - **Documentation**: Check the [Pointbreak docs](https://docs.withpointbreak.com)
-- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/withpointbreak/pointbreak-plugin/issues)
+- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/withpointbreak/pointbreak-claude/issues)
 - **Discord**: Join the Pointbreak community (coming soon)
 
 ---
