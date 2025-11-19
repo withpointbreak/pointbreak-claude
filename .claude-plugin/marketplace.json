@@ -7,7 +7,7 @@
       "name": "pointbreak",
       "version": "1.0.0",
       "description": "Debug programs with IDE debuggers via MCP. Adds the Pointbreak skill and debugging commands for AI-assisted debugging.",
-      "source": "."
+      "source": "./"
     }
   ]
 }
