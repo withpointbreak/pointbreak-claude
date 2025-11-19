@@ -2,6 +2,11 @@
   "name": "pointbreak-claude",
   "description": "Official Pointbreak debugging plugin for Claude Code",
   "version": "1.0.0",
+  "owner": {
+    "name": "Kevin Swiber",
+    "email": "kevin@withpointbreak.com",
+    "url": "https://withpointbreak.com"
+  },
   "plugins": [
     {
       "name": "pointbreak",
